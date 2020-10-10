@@ -17,4 +17,9 @@
 //?      <head>         <body>
 //? <title>  <meta>   <p>   <h1> * content from element  
 //? <p data-*=''> * attribute 
-
+//~ FOOTER
+//? sebagai catatan kaki pada sebuah elemen <article> atau <section>.
+//~ NAV 
+//?  digunakan untuk menampung sebuah navigasi yang sifatnya penting (major), contohnya navigasi utama pada sebuah website.
+//~ ARTICLE
+//? seperti container/pemisah pada element lainya * blog, komentar, forum post, dan konten lainnya
