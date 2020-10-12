@@ -47,8 +47,7 @@ li a .fa {
 
 /* @ SEMANTIC SECTION */
 article.berita,
-aside,
-footer {
+aside {
   padding: 20px 20px;
 }
 
@@ -167,7 +166,7 @@ main {
 }
 /*@ ARTICLE BERANDA */
 article > svg {
-  display: block;
+  display: flex;
 }
 article.beranda {
   position: relative;
@@ -322,6 +321,7 @@ p.berita {
   overflow: hidden;
   color: #6c757d !important;
   padding: 8px 0px 6px;
+  text-align: justify;
 }
 
 .tanggal {
@@ -376,7 +376,7 @@ p.berita {
   padding: 1.25rem;
 }
 
-.flexbox {
+.flex-direction {
   display: -ms-flexbox !important;
   display: flex !important;
 }
@@ -436,7 +436,7 @@ p.tentang {
 .clears:before,
 .clears:after {
   content: " ";
-  display: table;
+  display: flex;
 }
 
 .clears:after {
@@ -550,7 +550,7 @@ section.kontak {
 .contact-form {
   width: auto;
   margin: 2.5rem 0 1.5rem 0;
-  padding-left: 30px;
+  padding-left: 14px;
 }
 
 .wrap-form-input {
