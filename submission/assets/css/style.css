@@ -231,6 +231,7 @@ p.berita {
   border: none;
   box-shadow: 0px 4px 10px rgba(142, 142, 142, 0.25);
   margin-top: 26px;
+  border-radius: 20px;
 }
 
 /*? hover border */
@@ -341,6 +342,82 @@ p.berita {
   background-color: #7cbd1e;
 }
 
+/*? slider */
+.slide {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slide-wadah {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.slide-button {
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 1.5rem !important;
+  text-align: center !important;
+}
+
+.button-slider {
+  display: inline-block;
+  font-weight: 400;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  color: #7cbd1e;
+  background-color: transparent;
+  border-color: #bceb3c;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.button-slider:hover {
+  color: #fcf9f9;
+  background-color: #bceb3c;
+  border-color: #7cbd1e;
+}
+
+/*? animation */
+.artikel-berita {
+  animation: show .5s;
+  animation-fill-mode: both;
+}
+
+@keyframes show {
+  from {
+    transform: scale(0.7);
+    opacity: .4
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    transform: scale(0.7);
+    opacity: .4
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
 /* @ASSIDE DASHBOARD */
 .card-dashboard {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -641,7 +718,16 @@ p.text-kanan img {
   margin-right: 14px;
 }
 /* @ FOOTER */
+footer {
+  padding: 14px 30px;
+}
 
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+
+/* @ SLIDER */
 
 /* @ MEDIA-QUERY */
 @media (min-width: 48em) {

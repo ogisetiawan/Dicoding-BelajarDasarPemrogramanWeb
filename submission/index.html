@@ -9,14 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-  footer {
-    padding: 14px 30px;
-  }
-
-  .footer {
-    width: 100%;
-    display: inline-block;
-  }
+  
 </style>
 
 <body>
@@ -66,9 +59,10 @@
         <h1 class="berita">
           <span class="bl">Berita dan Artikel</span>
         </h1>
-        <div class="card-shadow" style="border-radius: 20px">
+        <!-- //! ARTICLE 1 -->
+        <div class="card-shadow artikel-berita" style="display:block">
           <div class="card">
-            <div class="card-img" style="background-image:url(assets/img/corona.jpg);">
+            <div class="card-img" style="background-image:url(assets/img/corona.jpg);" alt="Corona 1">
               <div class="overlay">
                 <div class="overlay-content">
                   <a href="#!"><span class="fa fa-eye"></span>&nbsp;&nbsp;Lihat</a>
@@ -87,8 +81,68 @@
             </div>
           </div>
         </div>
+        <!-- //! ARTICLE 2 -->
+        <div class="card-shadow artikel-berita" style="display:none">
+          <div class="card">
+            <div class="card-img" style="background-image:url(assets/img/corona-3.jpg);" alt="Corona 2">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="#!"><span class="fa fa-eye"></span>&nbsp;&nbsp;Lihat</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <a href="#!">
+                <h2>AS Kembangkan Metode Baru Deteksi Virus COVID-19 Dengan Cepat dan Murah</h2>
+                <p>Menurut sebuah studi terbaru yang dipublikasikan pada Selasa 8 September 2020, para peneliti di
+                  Fakultas Kedokteran Harvard telah mengembangkan metode untuk mendeteksi SARS-CoV-2 yang memicu
+                  penyakit COVID-19 dengan cepat dan murah tanpa bahan atau peralatan khusus...</p>
+                <span class="tanggal tanggal-warna">Senin, 16 Oktober 1995</span>
+                <span class="tanggal tanggal-warna2">@dicoding.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- //! ARTICLE 3 -->
+        <div class="card-shadow artikel-berita" style="display:none">
+          <div class="card">
+            <div class="card-img" style="background-image:url(assets/img/corona-2.jpg);" alt="Corona 3">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="#!"><span class="fa fa-eye"></span>&nbsp;&nbsp;Lihat</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <a href="#!">
+                <h2>2.291 Bidan Positif Covid-19, Pasien Diminta Janji Temu Sebelum ke Layanan</h2>
+                <p>Pengurus Harian PP Ikatan Bidan Indonesia (IBI), Ade Jubaedah, mengatakan sebanyak 2.291 bidan di
+                  Indonesia terkonfirmasi positif Covid-19. Dari jumlah tersebut, 22 orang meninggal dunia..</p>
+                <span class="tanggal tanggal-warna">Senin, 16 Oktober 1995</span>
+                <span class="tanggal tanggal-warna2">@dicoding.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- //! SLIDESHOW-BUTTON -->
+        <!-- ? #TanyaDicoding: kayanya button slideshow ini lebih baik menggunakan background-color ya atau lebih baik transparent sesuai wrna default?  -->
+        <!-- ? soalnya sya pernah baca button yg optional lbh baik transparent tp ketika hover dia akan brubah wrna -->
+        <div class="slide">
+          <div class="slide-wadah">
+            <div class="slide-button">
+              <a class="button-slider" onclick="slideButton(-1)" href="javascript:void(0)" title="Previous">
+                <i class="fa fa-chevron-left"></i> Sebelumnya
+              </a>
+              <a class="button-slider next" onclick="slideButton(1)" href="javascript:void(0)" title="Next">
+                Selanjutnya <i class="fa fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </article>
+
     </div>
+
     <!-- @ ASSIDE -->
     <aside>
       <h1 class="berita">
@@ -241,6 +295,7 @@
     </p>
   </footer>
   <!-- @ FOOTER -->
+  <script src="assets/js/slider.js"></script>
 </body>
 
 </html>
