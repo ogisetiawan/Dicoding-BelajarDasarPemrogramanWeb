@@ -1,5 +1,6 @@
 /* @ FONT */
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
   /*//? digunakan untuk menghapus seluruh padding dan margin standar yang diberikan browser pada elemen */
   -webkit-box-sizing: border-box;
@@ -12,6 +13,7 @@ body {
   margin: 0;
   background-color: #fcf9f9;
   color: #263646;
+  font-family: 'Poppins', sans-serif;
 }
 a {
   color: #263646;
