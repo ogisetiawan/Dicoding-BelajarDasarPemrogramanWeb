@@ -9,26 +9,27 @@
   <meta name="author" content="Ogi Setiawan">
   <meta name="keywords" content="ogi setiawan, corona, korona, berita korona, covid, covid-19">
   <meta name="description" content="Informasi tentang si corona terupdate.">
-  <title>InfoCorona | Berita Tentang Si Corona</title>
-  <link rel="shortcut icon" href="assets/img/icon-logo.png" type="image/x-icon">
+  <title>InfoCorona | Berita Tentang Si Corona Paling Update</title>
+  <link rel="shortcut icon" href="assets/img/icon-logo2.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
+
 </style>
 
 <body>
   <!-- @ HEADER -->
   <header>
-    <a href="javascript:void(0);" class="logo"><img src="assets/img/logo.png" alt="Info Corona"
+    <a href="javascript:void(0);" class="logo"><img src="assets/img/rsz_logo3.png" alt="Info Corona"
         style="max-height: 35px;"></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <nav>
       <ul class="menu">
-        <li><a href="#beranda"><i class="fa fa-home"></i>Beranda</a></li>
+        <li><a class="active" href="#beranda"><i class="fa fa-home"></i>Beranda</a></li>
         <li><a href="#berita"><i class="fa fa-newspaper-o"></i>Berita</a></li>
-        <li><a href="#data"><i class="fa fa-bar-chart"></i>Dashboard</a></li>
+        <li><a href="#dashboard"><i class="fa fa-bar-chart"></i>Dashboard</a></li>
         <li><a href="#tentang"><i class="fa fa-users"></i>Tentang</a></li>
         <li><a href="#kontak"><i class="fa fa-phone"></i>Kontak</a></li>
       </ul>
@@ -40,7 +41,7 @@
   <main>
     <!-- @ CONTENT -->
     <div id="content">
-      <article class="beranda">
+      <article class="beranda section" id="beranda">
         <div class="left-content">
           <img src="assets/img/covid.svg" height="300px" alt="covid19-ogi">
         </div>
@@ -59,7 +60,7 @@
         </path>
       </svg>
       <!-- @ ARTICLE -->
-      <article class="berita">
+      <article class="berita section" id="berita">
         <h1 class="berita">
           <span class="bl">Berita dan Artikel</span>
         </h1>
@@ -144,11 +145,10 @@
           </div>
         </div>
       </article>
-
     </div>
 
     <!-- @ ASSIDE -->
-    <aside>
+    <aside class="section" id="dashboard">
       <h1 class="berita">
         <span class="bl">Dashboard</span>
       </h1>
@@ -214,7 +214,7 @@
   <!-- @ MAIN -->
 
   <!-- @ TENTANG -->
-  <section class="clears tentang-container">
+  <section class="clears tentang-container section" id="tentang">
     <h1 class="tentang">
       <span class="bl">Tentang Kami</span>
     </h1>
@@ -246,7 +246,8 @@
             <li><strong>Umur :</strong> 24</li>
             <li><strong>Pengalaman :</strong>± 2 Tahun</li>
             <li><strong>Pendidikan :</strong> Sastra 1</li>
-            <li><strong>Status :</strong> Bekerja</li>
+            <li><strong>Address :</strong> Tangsel - Indonesia</li>
+            <li><strong>Phone :</strong> +62 899 809 1064</li>
           </ul>
         </div>
       </div>
@@ -254,7 +255,7 @@
   </section>
 
   <!-- @ KONTAK -->
-  <section class="kontak">
+  <section class="kontak section" id="kontak">
     <div class="left-content" style="text-align: left;">
       <h1 class="kontak">
         <span class="bl" style="border-left: 5px solid #7cbd1e !important;color: #fcf9f9">Kontak Kami</span>
@@ -300,6 +301,10 @@
   </footer>
   <!-- @ FOOTER -->
   <script src="assets/js/slider.js"></script>
+  <script src="assets/js/scrollan.js"></script>
+  <script>
+    
+  </script>
 </body>
 
 </html>
