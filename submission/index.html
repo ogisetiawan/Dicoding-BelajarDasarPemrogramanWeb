@@ -9,19 +9,115 @@
   <meta name="author" content="Ogi Setiawan">
   <meta name="keywords" content="ogi setiawan, corona, korona, berita korona, covid, covid-19">
   <meta name="description" content="Informasi tentang si corona terupdate.">
-  <title>InfoCorona | Berita Tentang Si Corona Paling Update</title>
+  <title>InfoKorona | Berita Tentang Si Korona Paling Update</title>
   <link rel="shortcut icon" href="assets/img/icon-logo2.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
+  /* ? MENU NAV OUT KETIKA SIZE 911  */
+  @media screen and (min-width: 911px) {
+    header li {
+      float: left;
+    }
 
+    nav .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+
+    header .menu-icon {
+      display: none;
+    }
+
+    .left-content img {
+      max-width: 80%;
+      height: min-content;
+    }
+
+  }
+
+  /* ? KETIKA DIBAWAH 911px pada  gambar */
+  @media screen and (max-width: 911px) {
+    .left-content img {
+      max-width: 80%;
+      height: min-content;
+    }
+
+    .right-content img {
+      max-width: 80%;
+      height: -webkit-fill-available;
+    }
+
+    .tentang-text {
+      width: 100%;
+    }
+
+    .tentang-detail {
+      width: 100%;
+    }
+  }
+
+  /* @ MEDIA-QUERY TABLE MUNGKIIN */
+  @media screen and (max-width: 690px) {
+    article#beranda {
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    article#beranda>.left-content {
+      float: none;
+      width: 100%;
+    }
+
+    article#beranda>.left-content img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    article#beranda>.right-content {
+      flex: 0 0 100%;
+      max-width: 100% !important;
+      text-align: center !important;
+      ;
+    }
+
+
+    article#berita {
+      width: 100% !important;
+    }
+
+    aside#dashboard {
+      float: none;
+      min-width: 100%;
+    }
+  }
+
+  /* @ MEDIA-QUERY SMARTPHONE */
+  @media screen and (max-width: 550px) {
+    section.tentang-container {
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    section.tentang-container>.left-content {
+      width: 100% !important;
+    }
+
+    section.tentang-container>.right-content {
+      flex: 0 0 100%;
+      max-width: 100% !important;
+    }
+  }
 </style>
 
 <body>
   <!-- @ HEADER -->
   <header>
-    <a href="javascript:void(0);" class="logo"><img src="assets/img/rsz_logo3.png" alt="Info Corona"
+    <a href="javascript:void(0);" class="logo"><img src="assets/img/rsz_logo3.png" alt="Info Korona"
         style="max-height: 35px;"></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -232,7 +328,7 @@
         <a target="_blank" href="https://ogisetiawan.github.io/"><span class="fa fa-chrome"></span></a>
       </div>
     </div>
-    <div class="right-content" style="width: 60%;max-width: 60%;">
+    <div class="right-content" style="width: 100%;max-width: 60%;display: flex; flex-wrap: wrap;">
       <!-- ? tentang -->
       <div class="tentang-text">
         <p class="tentang">I am Ogi Setiawan, web development from Indonesia. I have rich experience in Web site
@@ -292,9 +388,9 @@
     <div class="footer">
       <p class="text-kiri">Copyright © 2020 - @ogisetiawan</p>
       <p class="text-kanan">
-        <img src="https://d17ivq9b7rppb3.cloudfront.net/original/commons/certificate_logo.png" alt="Dicoding Logo"
+        <img src="assets/img/dicoding.logo.png" alt="Dicoding Logo"
           style="max-height: 20px;">
-        <img src="https://dashboard.prakerja.go.id/images/logo-kartu-prakerja.png" alt="Kartu Prakerja Logo"
+        <img src="assets/img/prakerja.logo.png" alt="Kartu Prakerja Logo"
           style="max-height: 20px;">
     </div>
     </p>
@@ -303,7 +399,7 @@
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/scrollan.js"></script>
   <script>
-    
+
   </script>
 </body>
 

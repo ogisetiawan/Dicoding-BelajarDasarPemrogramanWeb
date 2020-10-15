@@ -102,6 +102,7 @@ nav .menu {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  font-size: 14px;
 }
 header li a.active {
   background-color: #bceb3c;
@@ -169,7 +170,6 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 /* @ MAIN */
 main {
   margin: 0;
-  padding: 5px;
   overflow: auto;
 }
 /*@ ARTICLE BERANDA */
@@ -507,10 +507,11 @@ h1.tentang {
 }
 
 p.tentang {
-  margin: 6.4rem 0 1.5rem 0;
+  margin: 4.5rem 0 1.5rem 0;
   font-size: 1.2rem;
   line-height: 1.5em;
   text-align: justify!important;
+  color:#6c757d;
 }
 
 .tentang-container {
@@ -590,9 +591,10 @@ h3.job {
 }
 
 .tentang-status {
-  margin: 6.5rem 0 1.5rem 0;
+  margin: 4.5rem 0 1.5rem 0;
   font-size: 1.3rem;
   line-height: 1.4em;
+  color:#6c757d;
 }
 
 .tentang-status ul li {
@@ -740,16 +742,3 @@ footer {
 /* @ SLIDER */
 
 /* @ MEDIA-QUERY */
-@media (min-width: 48em) {
-  header li {
-    float: left;
-  }
-  nav .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  header .menu-icon {
-    display: none;
-  }
-}
