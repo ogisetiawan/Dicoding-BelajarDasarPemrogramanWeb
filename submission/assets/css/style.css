@@ -762,22 +762,90 @@ footer {
   display: inline-block;
 }
 
-/* @ DARK MODE */
+/* @ GELAP MODE */
 html {
   transition: color 300ms, background-color 300ms;
 }
 
-html[theme="dark-mode"] {
+html[theme="gelap-mode"] {
   filter: invert(100%);
   filter: invert(1) hue-rotate(180deg);
 }
 
-html[theme="dark-mode"] img {
+html[theme="gelap-mode"] img {
   filter: invert(95%) grayscale(100%);
 }
-html[theme="dark-mode"] .card-img {
+html[theme="gelap-mode"] .card-img {
   filter: invert(95%) grayscale(100%);
 }
+
+/*@ BUTTON CHECBOX MODE  */
+.switch {
+  display: flex;
+  height: 36px;
+  position: relative;
+  width: 70px;
+  position: fixed;
+  right: 10px;
+  top: 450px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #fcf9f9;
+  border: 1px solid #6c757d;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #263646;
+  border: 1px solid #6c757d;
+  bottom: 3px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  z-index: 421;
+}
+
+input:checked+.slider {
+  background-color: #101211;
+}
+
+input:checked+.slider:before {
+  transform: translateX(34px);
+  border-color: #CFCFCF;
+  background-color: #EFEFEF;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle-moon,
+.toggle-sun {
+  width: 50%;
+  text-align: center;
+  padding: 0.5em;
+  position: relative;
+  z-index: 420;
+}
+
 /* @ MEDIA-QUERY */
 /* ? MENU NAV OUT KETIKA SIZE 911  */
 @media screen and (min-width: 911px) {
