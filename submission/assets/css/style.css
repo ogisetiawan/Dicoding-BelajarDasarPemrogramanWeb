@@ -517,6 +517,16 @@ p.updated {
   padding-right: 2px;
 }
 
+/* @ DASHBOARD */
+section.dashboard {
+  position: relative;
+  color: #263646;
+  text-align: center;
+  overflow: auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
 /* @ TENTANG */
 h1.tentang {
   margin-top: 26px;
@@ -536,7 +546,7 @@ p.tentang {
 .tentang-container {
   max-width: 100%;
   padding: 26px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -913,7 +923,7 @@ input:checked+.slider:before {
     width: 100% !important;
   }
 
-  aside#dashboard {
+  aside#profile {
     float: none;
     min-width: 100%;
   }
@@ -935,7 +945,10 @@ input:checked+.slider:before {
     flex: 0 0 100%;
     max-width: 100% !important;
   }
-
+  h1.kontak{
+    text-align: left;
+    padding-left: 1.5rem;
+  }
   section#kontak {
     display: flex;
     -ms-flex-wrap: wrap;

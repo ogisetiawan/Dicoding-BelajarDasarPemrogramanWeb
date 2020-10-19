@@ -14,6 +14,19 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+  .left-dashboard {
+    width: 62%;
+    height: 100%;
+    float: left;
+  }
+
+  .right-dashboard {
+    width: 38%;
+    float: left;
+    text-align: left !important;
+  }
+</style>
 
 <body>
   <!-- @ HEADER -->
@@ -26,6 +39,7 @@
       <ul class="menu">
         <li><a class="active" href="#beranda"><i class="fa fa-home"></i>Beranda</a></li>
         <li><a href="#berita"><i class="fa fa-newspaper-o"></i>Berita</a></li>
+        <li><a href="#profile"><i class="fa fa-newspaper-o"></i>Profile</a></li>
         <li><a href="#dashboard"><i class="fa fa-bar-chart"></i>Dashboard</a></li>
         <li><a href="#tentang"><i class="fa fa-users"></i>Tentang</a></li>
         <li><a href="#kontak"><i class="fa fa-phone"></i>Kontak</a></li>
@@ -38,6 +52,8 @@
   <main>
     <!-- @ CONTENT -->
     <div id="content">
+
+      <!-- ! BERANDA -->
       <article class="beranda section" id="beranda">
         <div class="left-content">
           <img src="assets/img/covid.svg" height="300px" alt="covid19-ogi">
@@ -51,13 +67,13 @@
         </div>
         <div class="clear"></div>
       </article>
-      <!-- <svg xmlns="http://www.w3.org/2/svg" viewBox="0 0 1440 320"></svg> -->
       <svg xmlns="http://www.w3.org/2/svg" viewBox="0 0 1440 320">
         <path fill="#bceb3c" fill-opacity="1"
           d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,128C672,96,768,64,864,90.7C960,117,1056,203,1152,208C1248,213,1344,139,1392,101.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
         </path>
       </svg>
-      <!-- @ ARTICLE -->
+
+      <!-- ! ARTICLE -->
       <article class="berita section" id="berita">
         <h1 class="berita">
           <span class="bl">Berita dan Artikel</span>
@@ -143,12 +159,12 @@
           </div>
         </div>
       </article>
-    </div>
 
+    </div>
     <!-- @ ASSIDE -->
-    <aside class="section" id="dashboard">
+    <aside class="section" id="profile">
       <h1 class="berita">
-        <span class="bl">Dashboard</span>
+        <span class="bl">Profile</span>
       </h1>
       <!-- //~ POSITIF -->
       <div class="card-shadow" style="border-radius: 20px">
@@ -208,8 +224,80 @@
       </div>
       <p class="updated">* Data Update 16 Okt 2020</p>
     </aside>
+
   </main>
   <!-- @ MAIN -->
+
+  <!-- @ DASHBOARD -->
+  <section class="dashboard section" id="dashboard">
+    <h1 class="kontak">
+      <span class="bl" style="border-left: 5px solid #7cbd1e !important">Dashboard</span>
+    </h1>
+    <!--! chart-bar -->
+    <div class="left-dashboard" style="text-align: left;">
+      <div id="chartContainer" style="padding-top:50px; height: 390px; width: 100%;"></div>
+    </div>
+
+    <!--! chart statistic -->
+    <div class="right-dashboard">
+      <div class="card-shadow" style="border-radius: 20px">
+        <div class="card-dashboard hijau2 img-card">
+          <div class="card-dashboard-body">
+            <div class="flex-direction">
+              <div class="text-putih">
+                <p>POSITIF</p>
+                <h2 class="total">2.9K</h2>
+                <h6 class="jiwa">
+                  <span class="fa fa-arrow-up"></span>&nbsp;&nbsp;2 Jiwa
+                </h6>
+              </div>
+              <div class="kiri">
+                <img src="assets/img/infeksi.png" width="50" height="50" alt="Positif"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //~ SEMBUH -->
+      <div class="card-shadow" style="border-radius: 20px; margin-top: 14px;">
+        <div class="card-dashboard hijau1 img-card">
+          <div class="card-dashboard-body">
+            <div class="flex-direction">
+              <div class="text-putih">
+                <p>SEMBUH</p>
+                <h2 class="total">278</h2>
+                <h6 class="jiwa">
+                  <span class="fa fa-arrow-up"></span>&nbsp;&nbsp;26 Jiwa
+                </h6>
+              </div>
+              <div class="kiri">
+                <img src="assets/img/sembuh.png" width="50" height="50" alt="Sembuh"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //~ MENINGGAL -->
+      <div class="card-shadow" style="border-radius: 20px; margin-top: 14px;">
+        <div class="card-dashboard hijau3 img-card">
+          <div class="card-dashboard-body">
+            <div class="flex-direction">
+              <div class="text-putih">
+                <p>MENINGGAL</p>
+                <h2 class="total">80</h2>
+                <h6 class="jiwa">
+                  <span class="fa fa-minus"></span>&nbsp;&nbsp;0 Jiwa
+                </h6>
+              </div>
+              <div class="kiri">
+                <img src="assets/img/meninggal.png" width="50" height="50" alt="Meninggal"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="updated">* Data Update 16 Okt 2020</p>
+    </div>
+  </section>
 
   <!-- @ TENTANG -->
   <section class="clears tentang-container section" id="tentang">
@@ -395,6 +483,121 @@
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/scrollan.js"></script>
   <script src="assets/js/modean.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"
+    integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA=="
+    crossorigin="anonymous"></script>
+  <script>
+    window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        backgroundColor: "transparent",
+        animationEnabled: true,
+        axisY: [{
+          title: "Order",
+          lineColor: "#C24642",
+          tickColor: "#C24642",
+          labelFontColor: "#C24642",
+          titleFontColor: "#C24642",
+          includeZero: true,
+          suffix: "k"
+        },
+        {
+          title: "Footfall",
+          lineColor: "#369EAD",
+          tickColor: "#369EAD",
+          labelFontColor: "#369EAD",
+          titleFontColor: "#369EAD",
+          includeZero: true,
+          suffix: "k"
+        }],
+        axisX: {
+          interval: 1,
+          intervalType: "month",
+          valueFormatString: "MMM"
+        },
+        toolTip: {
+          shared: true
+        },
+        legend: {
+          cursor: "pointer",
+          itemclick: toggleDataSeries
+        },
+        data: [{
+          type: "line",
+          name: "Positif",
+          color: "#7cbd1e",
+          showInLegend: true,
+          axisYIndex: 1,
+          dataPoints: [
+            { x: new Date(2020, 00, 1), y: 0 },
+            { x: new Date(2020, 01, 1), y: 0 },
+            { x: new Date(2020, 02, 1), y: 1538 },
+            { x: new Date(2020, 03, 1), y: 10118 },
+            { x: new Date(2020, 04, 1), y: 26473 },
+            { x: new Date(2020, 05, 1), y: 32473 },
+            { x: new Date(2020, 06, 1), y: 43222 },
+            { x: new Date(2020, 07, 1), y: 53222 },
+            { x: new Date(2020, 08, 1), y: 93222 },
+            { x: new Date(2020, 09, 1), y: 103222 },
+            { x: new Date(2020, 10, 1), y: 0 },
+            { x: new Date(2020, 11, 1), y: 0 }
+          ]
+        },
+        {
+          type: "line",
+          name: "Sembuh",
+          color: "#bceb3c",
+          axisYIndex: 0,
+          showInLegend: true,
+          dataPoints: [
+            { x: new Date(2020, 00, 1), y: 0 },
+            { x: new Date(2020, 01, 1), y: 0 },
+            { x: new Date(2020, 02, 1), y: 81 },
+            { x: new Date(2020, 03, 1), y: 1522 },
+            { x: new Date(2020, 04, 1), y: 7308 },
+            { x: new Date(2020, 05, 1), y: 8444},
+            { x: new Date(2020, 06, 1), y: 13555 },
+            { x: new Date(2020, 07, 1), y: 15955 },
+            { x: new Date(2020, 08, 1), y: 21211 },
+            { x: new Date(2020, 09, 1), y: 23555 },
+            { x: new Date(2020, 10, 1), y: 0 },
+            { x: new Date(2020, 11, 1), y: 0 }
+          ]
+        },
+        {
+          type: "line",
+          name: "Meninggal",
+          color: "#f1f864 ",
+          axisYIndex: 0,
+          showInLegend: true,
+          dataPoints: [
+            { x: new Date(2020, 00, 1), y: 0 },
+            { x: new Date(2020, 01, 1), y: 0 },
+            { x: new Date(2020, 02, 1), y: 136 },
+            { x: new Date(2020, 03, 1), y: 792 },
+            { x: new Date(2020, 04, 1), y: 1613 },
+            { x: new Date(2020, 05, 1), y: 1799 },
+            { x: new Date(2020, 06, 1), y: 1943 },
+            { x: new Date(2020, 07, 1), y: 2145 },
+            { x: new Date(2020, 08, 1), y: 2945 },
+            { x: new Date(2020, 09, 1), y: 3802 },
+            { x: new Date(2020, 10, 1), y: 0 },
+            { x: new Date(2020, 11, 1), y: 0 }
+          ]
+        }]
+      });
+      chart.render();
+
+      function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+          e.dataSeries.visible = false;
+        } else {
+          e.dataSeries.visible = true;
+        }
+        e.chart.render();
+      }
+
+    }
+  </script>
 </body>
 
 </html>
