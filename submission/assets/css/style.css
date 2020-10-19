@@ -813,7 +813,7 @@ html[theme="gelap-mode"] .card-img {
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -824,19 +824,19 @@ html[theme="gelap-mode"] .card-img {
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 26px;
   z-index: 421;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #101211;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   transform: translateX(34px);
-  border-color: #CFCFCF;
-  background-color: #EFEFEF;
+  border-color: #cfcfcf;
+  background-color: #efefef;
 }
 
 .slider.round {
@@ -854,6 +854,31 @@ input:checked+.slider:before {
   padding: 0.5em;
   position: relative;
   z-index: 420;
+}
+
+/* tambahan */
+.left-dashboard {
+  width: 62%;
+  height: 100%;
+  float: left;
+}
+
+.right-dashboard {
+  width: 38%;
+  float: left;
+  text-align: left !important;
+}
+
+.card-profile {
+  padding: 20px;
+  text-align: center;
+}
+
+h4.status {
+  font-size: 15px;
+  color: #fcf9f9;
+  font-weight: 400;
+  padding: 2px;
 }
 
 /* @ MEDIA-QUERY */
@@ -881,6 +906,9 @@ input:checked+.slider:before {
     height: min-content;
   }
 
+  #profile img {
+    height: min-content;
+  }
   .right-content img {
     max-width: 80%;
     height: -webkit-fill-available;
@@ -924,9 +952,26 @@ input:checked+.slider:before {
   }
 
   aside#profile {
-    float: none;
+    float: right;
     min-width: 100%;
   }
+  section.dashboard {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .left-dashboard {
+    width: 100%;
+    height: 100%;
+    float: none;
+  }
+  .right-dashboard {
+    width: 100%;
+    float: none;
+    text-align: left !important;
+    margin: inherit;
+  }
+  
 }
 
 /* @ MEDIA-QUERY SMARTPHONE */
@@ -945,7 +990,7 @@ input:checked+.slider:before {
     flex: 0 0 100%;
     max-width: 100% !important;
   }
-  h1.kontak{
+  h1.kontak {
     text-align: left;
     padding-left: 1.5rem;
   }

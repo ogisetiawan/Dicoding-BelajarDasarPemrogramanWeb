@@ -14,19 +14,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<style>
-  .left-dashboard {
-    width: 62%;
-    height: 100%;
-    float: left;
-  }
-
-  .right-dashboard {
-    width: 38%;
-    float: left;
-    text-align: left !important;
-  }
-</style>
 
 <body>
   <!-- @ HEADER -->
@@ -161,68 +148,18 @@
       </article>
 
     </div>
+
     <!-- @ ASSIDE -->
     <aside class="section" id="profile">
-      <h1 class="berita">
-        <span class="bl">Profile</span>
-      </h1>
-      <!-- //~ POSITIF -->
-      <div class="card-shadow" style="border-radius: 20px">
-        <div class="card-dashboard hijau2 img-card">
-          <div class="card-dashboard-body">
-            <div class="flex-direction">
-              <div class="text-putih">
-                <p>POSITIF</p>
-                <h2 class="total">2.9K</h2>
-                <h6 class="jiwa">
-                  <span class="fa fa-arrow-up"></span>&nbsp;&nbsp;2 Jiwa
-                </h6>
-              </div>
-              <div class="kiri">
-                <img src="assets/img/infeksi.png" width="50" height="50" alt="Positif"> </div>
-            </div>
-          </div>
+      <div class="card-shadow" style="padding: 10px 20px;margin-top: 70px;background: linear-gradient(0deg, rgba(124,189,30,1) 0%, rgba(188,235,60,1) 100%);">
+        <div class="card-profile">
+          <img class="tentang-photo" src="assets/img/ogifoto.jpg" height="250">
+          <h2 class="nama" style="line-height: normal;color: #fcf9f9;">Ogi Setiawan</h2>
+          <h3 class="job" style="color: #fcf9f9"><i class="fa fa-star"></i> 0 XP</h3>
+          <h4 class="status"><i class="fa fa-users"></i> Bergabung Sejak 20 Mar 2020</h4>
+          <h4 class="status"><i class="fa fa-map-marker"></i> Kota Tangerang Selatan, Banten</h4>
         </div>
       </div>
-
-      <!-- //~ SEMBUH -->
-      <div class="card-shadow" style="border-radius: 20px; margin-top: 14px;">
-        <div class="card-dashboard hijau1 img-card">
-          <div class="card-dashboard-body">
-            <div class="flex-direction">
-              <div class="text-putih">
-                <p>SEMBUH</p>
-                <h2 class="total">278</h2>
-                <h6 class="jiwa">
-                  <span class="fa fa-arrow-up"></span>&nbsp;&nbsp;26 Jiwa
-                </h6>
-              </div>
-              <div class="kiri">
-                <img src="assets/img/sembuh.png" width="50" height="50" alt="Sembuh"> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- //~ MENINGGAL -->
-      <div class="card-shadow" style="border-radius: 20px; margin-top: 14px;">
-        <div class="card-dashboard hijau3 img-card">
-          <div class="card-dashboard-body">
-            <div class="flex-direction">
-              <div class="text-putih">
-                <p>MENINGGAL</p>
-                <h2 class="total">80</h2>
-                <h6 class="jiwa">
-                  <span class="fa fa-minus"></span>&nbsp;&nbsp;0 Jiwa
-                </h6>
-              </div>
-              <div class="kiri">
-                <img src="assets/img/meninggal.png" width="50" height="50" alt="Meninggal"> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="updated">* Data Update 16 Okt 2020</p>
     </aside>
 
   </main>
@@ -234,7 +171,7 @@
       <span class="bl" style="border-left: 5px solid #7cbd1e !important">Dashboard</span>
     </h1>
     <!--! chart-bar -->
-    <div class="left-dashboard" style="text-align: left;">
+    <div class="left-dashboard">
       <div id="chartContainer" style="padding-top:50px; height: 390px; width: 100%;"></div>
     </div>
 
@@ -554,7 +491,7 @@
             { x: new Date(2020, 02, 1), y: 81 },
             { x: new Date(2020, 03, 1), y: 1522 },
             { x: new Date(2020, 04, 1), y: 7308 },
-            { x: new Date(2020, 05, 1), y: 8444},
+            { x: new Date(2020, 05, 1), y: 8444 },
             { x: new Date(2020, 06, 1), y: 13555 },
             { x: new Date(2020, 07, 1), y: 15955 },
             { x: new Date(2020, 08, 1), y: 21211 },
