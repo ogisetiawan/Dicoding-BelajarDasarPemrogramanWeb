@@ -12,6 +12,12 @@
 //@ ANATOMI WEBSITE
 //? HTML, CSS, JAVASCRIPT
 
+//@ ATTRIBUT HTML
+//? accesskey ; Menentukan tombol shortcut untuk mengaktifkan/memfokuskan pada sebuah element
+//? contenteditable ; Menentukan konten dari elemen merupakan konten yang dapat diubah atau tidak
+//? data-* ; Digunakan untuk menyimpan sebuah data pribadi khusus ke halaman atau aplikasi.
+//? translate ; Menentukan apakah konten elemen harus diterjemahkan atau tidak
+
 //@ STRUCTURE HTML
 //?             <html> * element
 //?      <head>         <body>
