@@ -29,3 +29,14 @@
 //?  digunakan untuk menampung sebuah navigasi yang sifatnya penting (major), contohnya navigasi utama pada sebuah website.
 //~ ARTICLE
 //? seperti container/pemisah pada element lainya * blog, komentar, forum post, dan konten lainnya
+
+//@ CSS
+//? Adjacent Sibling Selector (+) ; aturan css hanya satu elemen setelah suatu elemen selanjutnya
+//? General Sibling Selector (~) ; aturan css semua elelmen setelah suatu elemen selanjutnya didalam elemen html
+//? Child Selector (>) ; diterapkan pada seluruh tag elemen yang berada pada didalam suatu elemen html
+//? Descendant Selector (space) ; diterapkan pada seluruh tag elemen yang berada pada didalam suatu elemen html
+//? inline : digunakan untuk mengubah elemen block berperilaku seperti elemen inline.
+//? block : digunakan untuk mengubah elemen inline berperilaku seperti elemen block.
+//? inline-block : membuat elemen block tidak menambahkan baris baru ketika dibuat, namun tetap mempertahankan sifat lain dari elemen block.
+//? none : digunakan untuk menyembunyikan elemen dari halaman
+//? float; jika elment container tidak seiimbang dengan size gambar (contoh) makan bisa diterapkan oleh celar-property/overflow: auto

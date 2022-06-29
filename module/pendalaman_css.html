@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling</title>
+    <style>
+        * {
+            font-family: monospace;
+             /* digunakan untuk menghapus seluruh padding dan margin standar yang diberikan browser pada elemen */
+           /* margin: 5; */
+           /* padding: 0; */
+ 
+           /* Menggunakan border-box dalam perhitungan dimensi box-nya */
+           box-sizing: border-box;
+        }
+
+        /* Embedded Style Sheet */
+        span+p {
+            /* hanya satu element p saja setelah span */
+            /* tag selector */
+            color: red;
+            /* property : value */
+        }
+
+        span~p {
+            /* semua elemen p setelah span didalam suatu elemen section*/
+            color: blue;
+        }
+
+        div>p {
+            background-color: yellow;
+        }
+
+        article p {
+            background-color: red;
+        }
+
+        blockquote::before {
+            content: '#';
+        }
+
+        blockquote::after {
+            content: '"';
+        }
+
+        blockquote::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: saddlebrown;
+        }
+
+        div>.indent {
+            text-indent: 2em;
+        }
+
+        #overflow>p {
+            height: 200px;
+            width: 200px;
+            background-color: lightgreen;
+            overflow: auto;
+        }
+        
+        #position > h1,
+        #position > p {
+            background-color: lightgreen;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .container {
+           width: 800px;
+           height: 400px;
+           border: 1px solid black;
+           margin: 0 auto;
+       }
+ 
+       .left-content {
+           text-align: center;
+           line-height: 400px;
+           width: 30%;
+           height: 100%;
+           background-color: #00c7ed;
+ 
+           /* digunakan untuk memindahkan posisi elemen ke sisi kiri container */
+           float: left;
+       }
+ 
+       .right-content {
+           text-align: center;
+           line-height: 400px;
+           width: 70%;
+           height: 100%;
+           background-color: #60d0a8;
+ 
+           /* digunakan untuk memindahkan posisi elemen ke sisi kanan container */
+           float: right;
+       }
+        
+    </style>
+</head>
+
+<body>
+
+    <span>
+        <h1>Adjacent Sibling Selector +</h1>
+    </span>
+    <p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan
+        rule
+        dengan menampilkan teks berwarna hijau.</p>
+    <p>Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar, namun tidak diletakkan persis
+        setelahnya,
+        sehingga rule tidak akan diterapkan pada elemen ini.</p>
+    <div>
+        <p> ELEMEN DIV </p>
+    </div>
+    <h1>General Sibling Selector ~ </h1>
+    <p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan
+        rule
+        dengan menampilkan teks berwarna hijau.</p>
+
+    <div>
+        <h1>Child Selector > </h1>
+        <p>Paragraf pertama. di dalam div.</p>
+        <p>Paragraf kedua. di dalam div.</p>
+        <section>
+            <p>Paragraf ketiga. di dalam div namun bukan sebagai anak elemen secara langsung.</p>
+        </section>
+        <p>Paragraf keempat. di dalam div.</p>
+    </div>
+
+    <article>
+        <h1>Descendant Selector space</h1>
+        <p>Paragraf pertama. di dalam div.</p>
+        <p>Paragraf kedua. di dalam div.</p>
+        <section>
+            <p>Paragraf ketiga. di dalam div namun bukan sebagai anak elemen secara langsung.</p>
+        </section>
+        <p>Paragraf keempat. di dalam div.</p>
+    </article>
+
+    <h1>Pseudo-elemen Selector</h1>
+    <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam id eaque necessitatibus quidem
+        quam possimus laudantium, quae optio doloribus corrupti voluptatum. Itaque rerum officiis perspiciatis.
+        Voluptatem maiores veniam nesciunt!
+    </blockquote>
+
+    <div>
+        <h1>Text Indent</h1>
+        <p class="indent">
+            Text akan kegeser kekanan
+        </p>
+    </div>
+
+    <div id="overflow">
+        <h1>Overflow</h1>
+        <p>
+            Jika text melibeih ukuran elemen, akan overflow auto/scroll
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi architecto quisquam est tempora modi in,
+            adipisci ipsa, molestiae sed ipsum a quia beatae dolor consequuntur aliquid deleniti quasi. Maiores,
+            facilis?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste deleniti facilis adipisci officia, unde,
+            voluptates aliquid officiis mollitia, iusto laborum doloremque porro quidem corporis atque! Repellat,
+            maiores? Enim, iste eius?
+        </p>
+    </div>
+
+    <div id="position">
+        <h1>Position</h1>
+        <p>
+            elemen akan terus fixed position sesuai top/bottom
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="left-content">
+            <h3>Left Content</h3>
+        </div>
+        <div class="right-content">
+            <h3>Right Content</h3>
+        </div>
+     </div>
+</body>
+
+</html>
