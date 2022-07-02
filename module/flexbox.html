@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            /* membuat elemen child menjadi vertikal & terbagi sesuai ruang kosong dari size container */
+            display: flex;
+            /* membuat flex-item (element child) akan menjadi horizontal & terbagi */
+            flex-direction: column;
+
+            /* Properti lainnya */
+            width: 800px;
+            height: 250px;
+            background-color: #11C5C6;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .box {
+            display: flex;
+            flex-grow: 1; 
+            flex-direction: row;
+  
+            /* properti lainnya */
+            background-color: #FBDD1C;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .g-2{
+            flex-grow: 2;
+        }
+        .row {
+           flex-grow: 1;
+ 
+           /* properti lainnya */
+           margin: 5px;
+           border: 2px solid black;
+           border-radius: 10px;
+           background-color: #fe899a;
+       }
+    </style>
+</head>
+<body>
+    <!-- flex-container -->
+    <div class="container">
+        <!-- flex-item -->
+        <div class="box"></div>
+        <div class="box g-2">
+            <div class="row">
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        <div class="box"></div>
+     </div>
+</body>
+</html>

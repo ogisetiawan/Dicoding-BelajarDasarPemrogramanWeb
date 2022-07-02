@@ -40,3 +40,6 @@
 //? inline-block : membuat elemen block tidak menambahkan baris baru ketika dibuat, namun tetap mempertahankan sifat lain dari elemen block.
 //? none : digunakan untuk menyembunyikan elemen dari halaman
 //? float; jika elment container tidak seiimbang dengan size gambar (contoh) makan bisa diterapkan oleh celar-property/overflow: auto
+
+//@ FLEXBOX
+//? flex-grow ;  menyesuaikan ukurannya sesuai ruang kosong yang ada pada flex container
