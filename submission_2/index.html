@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="author" content="Ogi Setiawan">
+  <title>Ogi Setiawan | Porfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- @ HEADER -->
+  <header>
+    <a href="javascript:void(0);" class="logo">OgiSetiawan</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <nav>
+      <ul class="menu">
+        <li><a class="active" href="#intro"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#porto"><i class="fa fa-paint-brush"></i>Portfolio</a></li>
+        <li><a href="#profile"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#kontak"><i class="fa fa-phone"></i>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- @ HEADER -->
+
+  <!-- @ MAIN -->
+  <main>
+    <!-- @ CONTENT -->
+    <div id="content">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 170" style="margin-bottom: -6px">
+        <path fill="#DE3C3C" fill-opacity="1" d="M0,160L1440,32L1440,320L0,320Z"></path>
+      </svg>
+      <!-- //! INTRO -->
+      <article class="intro section" id="intro">
+        <div class="left-content">
+          <img src="assets/img/developer.svg" height="300px" alt="web-portfolio">
+        </div>
+        <div class="right-content">
+          <h1 class="intro">Hi, I'm Ogi!</h1>
+          <p class="intro">Welcome to my Portfolio Website where i put all my work and projects related to my website and many more </p>
+          <button class="button">See more <i class="fa fa-arrow-right"></i></button>
+        </div>
+        <div class="clear"></div>
+      </article>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+        <path fill="#DE3C3C" fill-opacity="1" d="M0,128L1440,64L1440,0L0,0Z"></path>
+      </svg>
+
+      <!-- //! PORTO -->
+      <article class="porto section" id="porto">
+        <h1 class="porto">
+          <span class="bl">Portfolio</span>
+        </h1>
+        <!-- //! portfolio 1 -->
+        <div class="card-shadow artikel-porto" style="display:block">
+          <div class="card">
+            <div class="card-img" style="background-image:url(assets/img/mail.jpg);" alt="Corona 1">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="#!"><span class="fa fa-eye"></span>&nbsp;&nbsp;See more</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <a href="#!">
+                <h2>Web Monitoring Sales</h2>
+                <p>Website Monitoring Sales Transactions for Promo, LBP, Kasbank and Inventory modules each Group Region, Region and Area. Connected with third-party applications Syclla and SAP Business World with real-time synchronization.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- //! portfolio 2 -->
+        <div class="card-shadow artikel-porto" style="display:none">
+          <div class="card">
+            <div class="card-img" style="background-image:url(assets/img/ulesson.png);" alt="Corona 2">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="#!"><span class="fa fa-eye"></span>&nbsp;&nbsp;See more</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <a href="#!">
+                <h2>Web Research and Development</h2>
+                <p>A website that can manage and develop new products or item, so that they can be managed properly from idea formation, detailed formulas to the final packaging.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- //! portfolio 3 -->
+        <div class="card-shadow artikel-porto" style="display:none">
+          <div class="card">
+            <div class="card-img" style="background-image:url(assets/img/maxresdefault.jpg);" alt="Corona 3">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="#!"><span class="fa fa-eye"></span>&nbsp;&nbsp;See more</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <a href="#!">
+                <h2>Stock position</h2>
+                <p>A website that can provide information regarding the amount of stock, aging stock, free stock, and incoming stock each warehouse</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- //! SLIDESHOW-BUTTON -->
+        <div class="slide">
+          <div class="slide-wadah">
+            <div class="slide-button">
+              <a class="button-slider" onclick="slideButton(-1)" href="javascript:void(0)" title="Previous">
+                <i class="fa fa-chevron-left"></i> Prev
+              </a>
+              <a class="button-slider next" onclick="slideButton(1)" href="javascript:void(0)" title="Next">
+                Next <i class="fa fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- @ ASSIDE -->
+    <aside class="section" id="profile">
+      <div class="card-shadow"
+        style="padding: 10px 20px;margin-top: 70px;">
+        <div class="card-profile">
+          <img class="profile-photo" src="assets/img/ogi2.png" height="250">
+          <h2 class="nama" style="line-height: normal;color: #373833;">Ogi Setiawan</h2>
+          <a href="javascript:void(0);" class="fa fa-linkedin"></a>|<a href="javascript:void(0);" class="fa fa-globe"></a>|<a href="javascript:void(0);" class="fa fa-instagram"></a>|<a href="javascript:void(0);" class="fa fa-facebook"></a>|<a href="javascript:void(0);" class="fa fa-twitter"></a>
+        </div>
+      </div>
+    </aside> 
+  </main>
+  <!-- @ MAIN -->
+
+
+  <!-- @ FOOTER -->
+  <footer>
+    <div class="footer">
+      <p class="text-kiri">Copyright © 2022 - @ogisetiawan</p>
+      <p class="text-kanan">
+        <img src="assets/img/dicoding.logo.png" alt="Dicoding Logo" style="max-height: 20px;">
+    </div>
+    </p>
+  </footer>
+  <!-- @ FOOTER -->
+  
+  <script src="assets/js/slider.js"></script> 
+</body>
+</html>
